@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voula Farinha — Innenräume mit Herz</title>
+  <meta name="description" content="Online Interior Design Service · 3D Raumplanung & Designpakete · BDIA Mitglied · info@voulafarinha.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       PRELOADER
+  ═══════════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="pre-inner">
+      <div class="pre-line-top"></div>
+      <div class="pre-logo-wrap">
+        <p class="pre-name-1"><span>V</span><span>O</span><span>U</span><span>L</span><span>A</span></p>
+        <p class="pre-name-2"><span>F</span><span>A</span><span>R</span><span>I</span><span>N</span><span>H</span><span>A</span></p>
+        <p class="pre-sub">Interior Design</p>
+      </div>
+      <div class="pre-line-bot"></div>
+    </div>
+    <div class="pre-counter" id="pre-counter">0%</div>
+    <div class="pre-fill" id="pre-fill"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       CURSOR
+  ═══════════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="cursor-label"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo" aria-label="Voula Farinha">
+      <span class="logo-v">Voula</span>
+      <span class="logo-f">Farinha</span>
+    </a>
+
+    <ul class="nav-list" role="list">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#services">Leistungen</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#pricing">Preise</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+
+    <a href="mailto:info@voulafarinha.com" class="nav-cta magnetic" data-cursor="Buchen">
+      <span>Kostenlos beraten lassen</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="nav-burger" id="nav-burger" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#services">Leistungen</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#pricing">Preise</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <a href="mailto:info@voulafarinha.com" class="mobile-cta">Kostenlose Beratung</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="hero-left">
+      <p class="hero-tag js-fade-up">
+        <span class="tag-line"></span>
+        Online Interior Design · BDIA Mitglied
+      </p>
+
+      <h1 class="hero-h1" aria-label="Innenräume mit Herz">
+        <span class="hero-line">
+          <span class="hero-li">Innen<span class="gold-italic glitch" data-text="räume">räume</span></span>
+        </span>
+        <span class="hero-line"><span class="hero-li">mit Herz</span></span>
+      </h1>
+
+      <div class="hero-foot js-fade-up">
+        <p class="hero-caption">
+          3D Raumplanung &amp; Designpakete für dein Zuhause —<br>
+          persönlich, professionell und vollständig online.
+        </p>
+        <div class="hero-ctas">
+          <a href="mailto:info@voulafarinha.com" class="btn-primary magnetic">
+            <span>Termin vereinbaren</span>
+          </a>
+          <a href="#gallery" class="btn-text">
+            Galerie ansehen
+            <svg width="16" height="10" viewBox="0 0 16 10"><path d="M1 5h14M10 1l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right" id="hero-img">
+      <div class="hero-img-inner">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=960&q=85&auto=format&fit=crop" alt="Premium Interior Design" loading="eager">
+      </div>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-img-badge">
+        <span class="badge-n">15+</span>
+        <span class="badge-l">Jahre Erfahrung</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll js-fade-up">
+      <div class="scroll-bar"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       MARQUEE
+  ═══════════════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="m-item">Innenräume mit Herz</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Online Interior Design</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">3D Raumplanung</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">BDIA Mitglied</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Farbberatung</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Designpakete ab 699€</span>
+      <span class="m-sep">◆</span>
+      <!-- repeat -->
+      <span class="m-item">Innenräume mit Herz</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Online Interior Design</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">3D Raumplanung</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">BDIA Mitglied</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Farbberatung</span>
+      <span class="m-sep">◆</span>
+      <span class="m-item">Designpakete ab 699€</span>
+      <span class="m-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+
+        <div class="about-img-wrap js-reveal-left">
+          <div class="about-img-clip" id="about-clip">
+            <img id="about-img" src="voula-portrait.jpeg" alt="Voula Farinha — Interior Design" loading="lazy">
+          </div>
+          <div class="about-deco-corner"></div>
+          <div class="about-float-card js-reveal">
+            <span class="float-n" data-count="200">0</span>
+            <span class="float-l">Projekte</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div class="sec-tag js-reveal">
+            <span>01</span>Über mich
+          </div>
+          <h2 class="js-reveal">
+            Design, das dein<br><em>Leben widerspiegelt</em>
+          </h2>
+          <p class="js-reveal">
+            Als BDIA-zertifizierte Innenarchitektin bringe ich über 15 Jahre Erfahrung mit einem tiefen Verständnis für das zusammen, was Räume wirklich lebenswert macht — die Balance aus Ästhetik und gelebtem Alltag.
+          </p>
+          <p class="js-reveal">
+            Mein Online-Service macht hochwertiges Innenarchitektur-Know-how zugänglich: Von der ersten Idee bis zur finalen 3D-Visualisierung, komplett remote, in deinem Tempo.
+          </p>
+
+          <div class="about-stats js-reveal">
+            <div class="astat">
+              <span class="astat-n" data-count="200">0</span>
+              <span class="astat-l">Projekte</span>
+            </div>
+            <div class="astat">
+              <span class="astat-n" data-count="98">0</span>
+              <span class="astat-l">% Zufriedenheit</span>
+            </div>
+            <div class="astat">
+              <span class="astat-n" data-count="15">0</span>
+              <span class="astat-l">Jahre Expertise</span>
+            </div>
+          </div>
+
+          <a href="mailto:info@voulafarinha.com" class="btn-outline js-reveal magnetic">
+            <span>Mein Ansatz kennenlernen</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════════ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="services-head">
+        <div class="sec-tag js-reveal"><span>02</span>Leistungen</div>
+        <h2 class="js-reveal">Meine <em>Leistungen</em><br>für dich</h2>
+        <p class="js-reveal">Von der Farbberatung bis zum vollständigen 3D-Raumkonzept — maßgeschneidert für deine Wünsche.</p>
+      </div>
+
+      <div class="svc-grid">
+        <article class="svc-card js-reveal tilt-card">
+          <div class="svc-num">01</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="40" height="40" rx="2"/>
+              <line x1="4" y1="18" x2="44" y2="18"/>
+              <line x1="18" y1="18" x2="18" y2="44"/>
+            </svg>
+          </div>
+          <h3>Look &amp; Feel Paket</h3>
+          <p>Individuelles Farb- und Raumkonzept mit 2D/3D-Grundriss, Budget-Tracker und persönlicher Präsentation mit Walkthrough.</p>
+          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </article>
+
+        <article class="svc-card js-reveal tilt-card">
+          <div class="svc-num">02</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 40V20L24 8l16 12v20"/>
+              <rect x="18" y="28" width="12" height="12"/>
+            </svg>
+          </div>
+          <h3>3D Raumkonzept</h3>
+          <p>Maßgeschneidertes 3D-Design für alle, die ihren Raum selbst umsetzen möchten — mit maximaler Klarheit und Detailtreue.</p>
+          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </article>
+
+        <article class="svc-card js-reveal tilt-card">
+          <div class="svc-num">03</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="16"/>
+              <circle cx="24" cy="24" r="6"/>
+              <line x1="24" y1="4" x2="24" y2="12"/>
+              <line x1="24" y1="36" x2="24" y2="44"/>
+              <line x1="4" y1="24" x2="12" y2="24"/>
+              <line x1="36" y1="24" x2="44" y2="24"/>
+            </svg>
+          </div>
+          <h3>Farbberatung</h3>
+          <p>Professionelle Farbkonzepte für Wohn- und Gewerberäume — harmonisch abgestimmt auf Licht, Möbel und persönlichen Stil.</p>
+          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </article>
+
+        <article class="svc-card js-reveal tilt-card">
+          <div class="svc-num">04</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="8" width="40" height="28" rx="2"/>
+              <line x1="16" y1="36" x2="16" y2="44"/>
+              <line x1="32" y1="36" x2="32" y2="44"/>
+              <line x1="10" y1="44" x2="38" y2="44"/>
+              <line x1="4" y1="22" x2="44" y2="22"/>
+            </svg>
+          </div>
+          <h3>Gewerbedesign</h3>
+          <p>Kommerzieller Innenausbau nach Corporate Identity — für Büros, Restaurants, Hotels und Einzelhandel.</p>
+          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PROCESS
+  ═══════════════════════════════════════════════ -->
+  <section id="process">
+    <div class="wrap">
+      <div class="process-head">
+        <div class="sec-tag js-reveal"><span>03</span>Mein Prozess</div>
+        <h2 class="js-reveal">So <em>einfach</em> funktioniert's</h2>
+      </div>
+
+      <div class="process-row">
+        <div class="process-connector">
+          <div class="connector-line" id="connector-line"></div>
+        </div>
+
+        <div class="proc-step js-reveal">
+          <div class="proc-num-wrap">
+            <div class="proc-num">01</div>
+          </div>
+          <h3>Erstkontakt</h3>
+          <p>Kostenloses Kennenlerngespräch per Zoom oder Telefon — ich lerne deine Wünsche und deinen Raum kennen.</p>
+        </div>
+
+        <div class="proc-step js-reveal">
+          <div class="proc-num-wrap">
+            <div class="proc-num">02</div>
+          </div>
+          <h3>Konzeptphase</h3>
+          <p>Ich entwickle dein persönliches Design-Konzept mit Moodboards, Farbpalette und ersten Entwürfen.</p>
+        </div>
+
+        <div class="proc-step js-reveal">
+          <div class="proc-num-wrap">
+            <div class="proc-num">03</div>
+          </div>
+          <h3>3D Visualisierung</h3>
+          <p>Detaillierte 3D-Darstellung deiner Räume — sieh das Ergebnis, bevor ein Möbelstück bewegt wird.</p>
+        </div>
+
+        <div class="proc-step js-reveal">
+          <div class="proc-num-wrap">
+            <div class="proc-num">04</div>
+          </div>
+          <h3>Übergabe &amp; Support</h3>
+          <p>Du erhältst alle Unterlagen für die Umsetzung. Auf Wunsch begleite ich dich auch während der Realisierung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="gallery-head">
+        <div>
+          <div class="sec-tag js-reveal"><span>04</span>Galerie</div>
+          <h2 class="js-reveal">Ausgewählte <em>Projekte</em></h2>
+        </div>
+        <a href="mailto:info@voulafarinha.com" class="btn-text js-reveal" data-cursor="Alle">
+          Alle Projekte
+          <svg width="16" height="10" viewBox="0 0 16 10"><path d="M1 5h14M10 1l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="g-item g-large js-g-item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop" alt="Wohnzimmer" loading="lazy">
+          <figcaption>Wohnzimmer</figcaption>
+        </figure>
+        <figure class="g-item js-g-item">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=700&q=80&auto=format&fit=crop" alt="Schlafzimmer" loading="lazy">
+          <figcaption>Schlafzimmer</figcaption>
+        </figure>
+        <figure class="g-item js-g-item">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80&auto=format&fit=crop" alt="Küche" loading="lazy">
+          <figcaption>Küche</figcaption>
+        </figure>
+        <figure class="g-item js-g-item">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&auto=format&fit=crop" alt="Esszimmer" loading="lazy">
+          <figcaption>Esszimmer</figcaption>
+        </figure>
+        <figure class="g-item js-g-item">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80&auto=format&fit=crop" alt="Badezimmer" loading="lazy">
+          <figcaption>Badezimmer</figcaption>
+        </figure>
+        <figure class="g-item js-g-item">
+          <img src="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800&q=80&auto=format&fit=crop" alt="Home Office" loading="lazy">
+          <figcaption>Home Office</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PRICING
+  ═══════════════════════════════════════════════ -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="pricing-head">
+        <div class="sec-tag js-reveal"><span>05</span>Pakete &amp; Preise</div>
+        <h2 class="js-reveal">Transparente <em>Preise</em></h2>
+        <p class="js-reveal">Das kostenfreie Erstgespräch ist bei jedem Paket inklusive.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="p-card js-reveal">
+          <div class="p-tier">Einstieg</div>
+          <div class="p-name">Beratung &amp; Planung</div>
+          <div class="p-price">€&thinsp;299</div>
+          <div class="p-per">pro Raum</div>
+          <ul class="p-list">
+            <li>Kostenloses Erstgespräch</li>
+            <li>Individuelle Farbberatung</li>
+            <li>2D Grundrissplanung</li>
+            <li>Einkaufsliste &amp; Empfehlungen</li>
+          </ul>
+          <a href="mailto:info@voulafarinha.com" class="btn-outline magnetic"><span>Anfragen</span></a>
+        </div>
+
+        <div class="p-card p-featured js-reveal">
+          <div class="p-badge">Empfohlen</div>
+          <div class="p-tier">Beliebt</div>
+          <div class="p-name">Look &amp; Feel Paket</div>
+          <div class="p-price">ab €&thinsp;699</div>
+          <div class="p-per">pro Raum</div>
+          <ul class="p-list">
+            <li>Kostenloses Erstgespräch</li>
+            <li>2D/3D Grundrissplanung</li>
+            <li>Kreatives Farb- &amp; Raumkonzept</li>
+            <li>Budget-Tracker</li>
+            <li>Finale Präsentation mit Walkthrough</li>
+          </ul>
+          <a href="mailto:info@voulafarinha.com" class="btn-primary magnetic"><span>Jetzt buchen</span></a>
+        </div>
+
+        <div class="p-card js-reveal">
+          <div class="p-tier">Premium</div>
+          <div class="p-name">Individuelles 3D Konzept</div>
+          <div class="p-price">ab €&thinsp;1.600</div>
+          <div class="p-per">pro Projekt</div>
+          <ul class="p-list">
+            <li>Kostenloses Erstgespräch</li>
+            <li>Vollständiges 3D Raumkonzept</li>
+            <li>Material- &amp; Möbelauswahl</li>
+            <li>Persönliche Begleitung</li>
+            <li>Privat- &amp; Gewerbeprojekte</li>
+          </ul>
+          <a href="mailto:info@voulafarinha.com" class="btn-outline magnetic"><span>Anfragen</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="sec-tag js-reveal"><span>06</span>Kundenstimmen</div>
+      <div class="testi-inner">
+        <div class="testi-quote-mark" aria-hidden="true">"</div>
+        <blockquote class="testi-text" id="t-text">
+          Voula hat unsere Wohnung komplett transformiert. Die 3D-Visualisierung half uns, das Ergebnis wirklich zu sehen — das Endresultat hat alle Erwartungen übertroffen.
+        </blockquote>
+        <div class="testi-author">
+          <div class="testi-line"></div>
+          <div>
+            <p class="testi-name" id="t-name">Sarah M.</p>
+            <p class="testi-role" id="t-role">Hamburg · Privatkundin</p>
+          </div>
+          <div class="testi-line"></div>
+        </div>
+        <div class="testi-dots" role="tablist">
+          <button class="t-dot active" data-i="0" aria-label="Testimonial 1"></button>
+          <button class="t-dot" data-i="1" aria-label="Testimonial 2"></button>
+          <button class="t-dot" data-i="2" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT / CTA
+  ═══════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-parallax-img" id="contact-parallax">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy">
+    </div>
+    <div class="contact-overlay"></div>
+    <div class="wrap contact-inner">
+      <div class="contact-split">
+
+        <!-- Left: Heading + info -->
+        <div class="contact-text">
+          <div class="sec-tag js-reveal light"><span>07</span>Kontakt</div>
+          <h2 class="js-reveal">
+            Bereit für deine<br><em>Traumräume?</em>
+          </h2>
+          <p class="js-reveal">
+            Das erste Gespräch ist kostenlos und unverbindlich.
+            Lass uns gemeinsam entdecken, was möglich ist.
+          </p>
+          <ul class="contact-info js-reveal">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              info@voulafarinha.com
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Erstgespräch immer kostenlos
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Antwort innerhalb von 24 h
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Contact form -->
+        <form class="contact-form js-reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Dein Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Maria Müller" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="cf-email">E-Mail-Adresse</label>
+              <input type="email" id="cf-email" name="email" placeholder="hallo@beispiel.de" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Dein Anliegen</label>
+            <select id="cf-subject" name="subject">
+              <option value="" disabled selected>Bitte wählen …</option>
+              <option value="look-feel">Look &amp; Feel Paket</option>
+              <option value="3d">3D Raumkonzept</option>
+              <option value="farbe">Farbberatung</option>
+              <option value="gewerbe">Gewerbedesign</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Deine Nachricht</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Erzähl mir von deinem Raum, deinen Wünschen und deinem Budget …" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="cf-privacy" name="privacy" required>
+            <label for="cf-privacy">Ich habe die <a href="#footer">Datenschutzerklärung</a> gelesen und stimme zu.</label>
+          </div>
+          <button type="submit" class="btn-primary btn-submit magnetic">
+            <span>Nachricht senden</span>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-success" id="form-success" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a href="#hero" class="foot-logo">Voula <em>Farinha</em></a>
+          <p>Online Interior Design Service — professionell, persönlich und mit Herz. BDIA-zertifiziert.</p>
+          <div class="foot-socials">
+            <a href="#" class="social-btn magnetic" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="mailto:info@voulafarinha.com" class="social-btn magnetic" aria-label="E-Mail">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="foot-col">
+          <h4>Leistungen</h4>
+          <ul>
+            <li><a href="#services">Look &amp; Feel Paket</a></li>
+            <li><a href="#services">3D Raumkonzept</a></li>
+            <li><a href="#services">Farbberatung</a></li>
+            <li><a href="#services">Gewerbedesign</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#pricing">Preise</a></li>
+            <li><a href="#testimonials">Referenzen</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:info@voulafarinha.com">info@voulafarinha.com</a></li>
+            <li><a href="#contact">Termin vereinbaren</a></li>
+            <li><a href="#contact">Impressum</a></li>
+            <li><a href="#contact">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p class="foot-copy">© 2024 Voula Farinha Interior Design. Alle Rechte vorbehalten.</p>
+        <div class="foot-bdia">
+          <span class="bdia-box">BDIA</span>
+          Mitglied des Bund Deutscher Innenarchitekten
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS — CDN
+  ═══════════════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js" defer></script>
+
+</body>
+</html>
