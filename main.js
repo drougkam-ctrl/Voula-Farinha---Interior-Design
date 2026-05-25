@@ -507,19 +507,19 @@ function initMagnetic() {
 function initTestimonials() {
   const data = [
     {
-      text: 'Voula hat unsere Wohnung komplett transformiert. Die 3D-Visualisierung half uns, das Ergebnis wirklich zu sehen — das Endresultat hat alle Erwartungen übertroffen.',
+      text: 'In nur 3 Wochen hatte ich ein komplettes 3D-Konzept für mein Wohnzimmer — ich hätte nie gedacht, dass das online so reibungslos funktioniert. Das Ergebnis hat alle Erwartungen übertroffen und ich spare mir teure Fehleinkäufe.',
       name: 'Sarah M.',
-      role: 'Hamburg · Privatkundin'
+      role: 'Hamburg · Look & Feel Paket'
     },
     {
-      text: 'Endlich ein Service, der unkompliziert und trotzdem absolut professionell ist. Das Look & Feel Paket war genau das Richtige — ich hätte nie gedacht, wie sehr ein Farbkonzept alles verändert.',
+      text: 'Ich war skeptisch ob Online-Beratung wirklich funktioniert. Nach dem ersten Gespräch war ich überzeugt. Voula hat in 2 Wochen ein Farbkonzept entwickelt, das meinen Altbau komplett verwandelt hat — für einen Bruchteil dessen, was ich erwartet hatte.',
       name: 'Thomas K.',
-      role: 'München · Privatkunde'
+      role: 'München · Beratung & Planung'
     },
     {
-      text: 'Voula hat unsere Büroräume in eine inspirierende Arbeitsumgebung verwandelt. Der Prozess war komplett remote, transparent und das Ergebnis begeistert jeden Besucher.',
+      text: 'Unsere Büroräume wirkten unprofessionell — das hat Kunden abgeschreckt. Nach Voulas 3D-Konzept haben wir investiert und seitdem hören wir bei jedem Besuch Komplimente. Der ROI war spürbar ab dem ersten Monat.',
       name: 'Anna L.',
-      role: 'Berlin · Gewerbekundin'
+      role: 'Berlin · 3D Konzept · Gewerbe'
     }
   ];
 
@@ -633,10 +633,35 @@ function init() {
   initFooter();
 }
 
+/* ============================================================
+   18. FAQ ACCORDION
+   ============================================================ */
+function initFaq() {
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isOpen  = btn.getAttribute('aria-expanded') === 'true';
+      const answer  = btn.nextElementSibling;
+
+      /* Close all others */
+      document.querySelectorAll('.faq-q').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        b.nextElementSibling.classList.remove('open');
+      });
+
+      /* Toggle current */
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        answer.classList.add('open');
+      }
+    });
+  });
+}
+
 /* ── Boot sequence ─────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   init();
   initPreloader();
+  initFaq();
 });
 
 /* Fallback: if preloader callback never fires after 4.5s */
