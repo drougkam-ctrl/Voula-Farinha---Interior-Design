@@ -119,15 +119,15 @@
     </a>
 
     <ul class="nav-list" role="list">
+      <li><a href="#services">Angebote</a></li>
+      <li><a href="#gallery">Projekte</a></li>
       <li><a href="#about">Über mich</a></li>
-      <li><a href="#services">Leistungen</a></li>
-      <li><a href="#gallery">Galerie</a></li>
-      <li><a href="#pricing">Preise</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
 
-    <a href="mailto:info@voulafarinha.com" class="nav-cta magnetic" data-cursor="Buchen">
-      <span>Kostenlos beraten lassen</span>
+    <a href="#freebie" class="nav-cta magnetic" data-cursor="Gratis">
+      <span>Gratis: Räume richtig starten</span>
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
 
@@ -139,13 +139,13 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
+      <li><a href="#services">Angebote</a></li>
+      <li><a href="#gallery">Projekte</a></li>
       <li><a href="#about">Über mich</a></li>
-      <li><a href="#services">Leistungen</a></li>
-      <li><a href="#gallery">Galerie</a></li>
-      <li><a href="#pricing">Preise</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
-    <a href="mailto:info@voulafarinha.com" class="mobile-cta">Kostenlose Beratung</a>
+    <a href="#freebie" class="mobile-cta">Gratis: Räume richtig starten</a>
   </div>
 
   <main>
@@ -158,27 +158,28 @@
     <div class="hero-left">
       <p class="hero-tag js-fade-up">
         <span class="tag-line"></span>
-        Online Interior Design · BDIA Mitglied
+        Online Raumplanung · BDIA-zertifiziert · Hamburg
       </p>
 
-      <h1 class="hero-h1" aria-label="Innenräume mit Herz">
+      <h1 class="hero-h1" aria-label="Endlich ein Plan für deinen Raum">
         <span class="hero-line">
-          <span class="hero-li">Innen<span class="gold-italic glitch" data-text="räume">räume</span></span>
+          <span class="hero-li">Endlich ein</span>
         </span>
-        <span class="hero-line"><span class="hero-li">mit Herz</span></span>
+        <span class="hero-line"><span class="hero-li"><span class="gold-italic glitch" data-text="Plan">Plan</span> für</span></span>
+        <span class="hero-line"><span class="hero-li">deinen Raum</span></span>
       </h1>
 
       <div class="hero-foot js-fade-up">
         <p class="hero-caption">
-          3D Raumplanung &amp; Designpakete für dein Zuhause —<br>
-          persönlich, professionell und vollständig online.
+          Du hast viele Ideen — aber keinen verlässlichen Plan für Grundriss, Möbel, Farbe und Licht?<br>
+          Ich zeige dir echte Planung und umsetzbare Lösungen. Komplett online.
         </p>
         <div class="hero-ctas">
-          <a href="mailto:info@voulafarinha.com" class="btn-primary magnetic">
-            <span>Termin vereinbaren</span>
+          <a href="#freebie" class="btn-primary magnetic">
+            <span>Selbst starten — gratis</span>
           </a>
-          <a href="#gallery" class="btn-text">
-            Galerie ansehen
+          <a href="#contact" class="btn-text">
+            Individuell planen
             <svg width="16" height="10" viewBox="0 0 16 10"><path d="M1 5h14M10 1l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
           </a>
         </div>
@@ -258,13 +259,13 @@
             <span>01</span>Über mich
           </div>
           <h2 class="js-reveal">
-            Design, das dein<br><em>Leben widerspiegelt</em>
+            Planung statt<br><em>Inspiration</em>
           </h2>
           <p class="js-reveal">
-            Als BDIA-zertifizierte Innenarchitektin bringe ich über 15 Jahre Erfahrung mit einem tiefen Verständnis für das zusammen, was Räume wirklich lebenswert macht — die Balance aus Ästhetik und gelebtem Alltag.
+            Ich helfe Menschen, ihre Räume funktional und stimmig zu planen — und Entscheidungen sicher zu treffen. Als BDIA-zertifizierte Innenarchitektin mit über 15 Jahren Erfahrung kenne ich das Problem: viele Ideen, kein verlässlicher Plan.
           </p>
           <p class="js-reveal">
-            Mein Online-Service macht hochwertiges Innenarchitektur-Know-how zugänglich: Von der ersten Idee bis zur finalen 3D-Visualisierung, komplett remote, in deinem Tempo.
+            Meine Kundinnen sind häufig 35+, berufstätig, wissen was sie wollen — brauchen aber jemanden, der Grundriss, Möbel, Farbe und Licht zusammenbringt. Kein Pinterest-Chaos mehr. Echte Planung, umsetzbar und komplett online.
           </p>
 
           <div class="about-stats js-reveal">
@@ -292,14 +293,39 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════
+       FREEBIE
+  ═══════════════════════════════════════════════ -->
+  <section id="freebie">
+    <div class="wrap">
+      <div class="freebie-inner js-reveal">
+        <div class="freebie-text">
+          <div class="freebie-tag">Kostenloser Einstieg</div>
+          <h2>Räume richtig <em>starten</em></h2>
+          <p>Mein kostenloser Guide zeigt dir, wie du deinen Raum strukturiert angehst — bevor du auch nur ein Möbelstück kaufst. Grundriss, Licht, Farbe: in der richtigen Reihenfolge.</p>
+          <form class="freebie-form" id="freebie-form" novalidate>
+            <div class="freebie-fields">
+              <input type="email" placeholder="Deine E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">
+              <button type="submit" class="btn-primary magnetic"><span>Gratis herunterladen</span></button>
+            </div>
+            <p class="freebie-hint">Kein Spam. Abmeldung jederzeit möglich.</p>
+          </form>
+        </div>
+        <div class="freebie-deco" aria-hidden="true">
+          <span class="freebie-big">Gratis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
        SERVICES
   ═══════════════════════════════════════════════ -->
   <section id="services">
     <div class="wrap">
       <div class="services-head">
-        <div class="sec-tag js-reveal"><span>02</span>Leistungen</div>
-        <h2 class="js-reveal">Meine <em>Leistungen</em><br>für dich</h2>
-        <p class="js-reveal">Von der Farbberatung bis zum vollständigen 3D-Raumkonzept — maßgeschneidert für deine Wünsche.</p>
+        <div class="sec-tag js-reveal"><span>02</span>Angebote</div>
+        <h2 class="js-reveal">Der richtige <em>nächste Schritt</em><br>für dich</h2>
+        <p class="js-reveal">Von kostenlosen Grundlagen bis zur vollständigen individuellen Raumplanung — je nachdem, wo du gerade stehst.</p>
       </div>
 
       <div class="svc-grid">
@@ -307,31 +333,18 @@
           <div class="svc-num">01</div>
           <div class="svc-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="40" height="40" rx="2"/>
-              <line x1="4" y1="18" x2="44" y2="18"/>
-              <line x1="18" y1="18" x2="18" y2="44"/>
+              <path d="M24 4l4 8h9l-7 6 3 9-9-6-9 6 3-9-7-6h9z"/>
+              <circle cx="24" cy="36" r="8"/>
             </svg>
           </div>
-          <h3>Look &amp; Feel Paket</h3>
-          <p>Individuelles Farb- und Raumkonzept mit 2D/3D-Grundriss, Budget-Tracker und persönlicher Präsentation mit Walkthrough.</p>
-          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+          <div class="svc-price-tag">Kostenlos</div>
+          <h3>Kostenfreie Raumanalyse</h3>
+          <p>Du beschreibst deinen Raum, ich schaue drüber und gebe dir eine erste Einschätzung — unverbindlich, ohne Kaufdruck. Ideal als Einstieg für eine individuelle Planung.</p>
+          <a href="#contact" class="svc-link">Jetzt anfragen <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
         </article>
 
         <article class="svc-card js-reveal tilt-card">
           <div class="svc-num">02</div>
-          <div class="svc-icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M8 40V20L24 8l16 12v20"/>
-              <rect x="18" y="28" width="12" height="12"/>
-            </svg>
-          </div>
-          <h3>3D Raumkonzept</h3>
-          <p>Maßgeschneidertes 3D-Design für alle, die ihren Raum selbst umsetzen möchten — mit maximaler Klarheit und Detailtreue.</p>
-          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
-        </article>
-
-        <article class="svc-card js-reveal tilt-card">
-          <div class="svc-num">03</div>
           <div class="svc-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="24" cy="24" r="16"/>
@@ -342,25 +355,41 @@
               <line x1="36" y1="24" x2="44" y2="24"/>
             </svg>
           </div>
-          <h3>Farbberatung</h3>
-          <p>Professionelle Farbkonzepte für Wohn- und Gewerberäume — harmonisch abgestimmt auf Licht, Möbel und persönlichen Stil.</p>
-          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+          <div class="svc-price-tag">17 €</div>
+          <h3>Grundkurs Farbe – Basics</h3>
+          <p>Lerne, wie Farbe in Räumen wirklich funktioniert — Licht, Kontrast, Kombination. Mit konkreten Farbkombinationen zum sofort Anwenden. Digitaler Kurs, direkt verfügbar.</p>
+          <a href="#contact" class="svc-link">Zum Kurs <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        </article>
+
+        <article class="svc-card js-reveal tilt-card">
+          <div class="svc-num">03</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 40V20L24 8l16 12v20"/>
+              <rect x="18" y="28" width="12" height="12"/>
+              <circle cx="24" cy="18" r="4"/>
+            </svg>
+          </div>
+          <div class="svc-price-tag">179 €</div>
+          <h3>Klartext-Gespräch</h3>
+          <p>90 Minuten Online-Beratung, komplett auf deinen Raum zugeschnitten. Du bekommst klare Antworten, konkrete Empfehlungen und einen umsetzbaren nächsten Schritt — ohne Umwege.</p>
+          <a href="#contact" class="svc-link">Termin anfragen <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
         </article>
 
         <article class="svc-card js-reveal tilt-card">
           <div class="svc-num">04</div>
           <div class="svc-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="8" width="40" height="28" rx="2"/>
-              <line x1="16" y1="36" x2="16" y2="44"/>
-              <line x1="32" y1="36" x2="32" y2="44"/>
-              <line x1="10" y1="44" x2="38" y2="44"/>
-              <line x1="4" y1="22" x2="44" y2="22"/>
+              <rect x="4" y="4" width="40" height="40" rx="2"/>
+              <line x1="4" y1="18" x2="44" y2="18"/>
+              <line x1="18" y1="18" x2="18" y2="44"/>
+              <line x1="4" y1="32" x2="18" y2="32"/>
             </svg>
           </div>
-          <h3>Gewerbedesign</h3>
-          <p>Kommerzieller Innenausbau nach Corporate Identity — für Büros, Restaurants, Hotels und Einzelhandel.</p>
-          <a href="mailto:info@voulafarinha.com" class="svc-link">Mehr erfahren <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+          <div class="svc-price-tag">ab 1.600 €</div>
+          <h3>Individuelle Online-Raumplanung</h3>
+          <p>Grundriss, Möbelstellung, Farb- und Materialkonzept — vollständig ausgearbeitet. Je nach Paket mit 2D/3D und Umsetzungshilfen. Anfrage statt Sofortkauf.</p>
+          <a href="#contact" class="svc-link">Projekt anfragen <svg width="14" height="8" viewBox="0 0 14 8"><path d="M1 4h12M8 1l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
         </article>
       </div>
     </div>
@@ -468,58 +497,58 @@
     <div class="wrap">
       <div class="pricing-head">
         <div class="sec-tag js-reveal"><span>05</span>Pakete &amp; Preise</div>
-        <h2 class="js-reveal">Transparente <em>Preise</em></h2>
-        <p class="js-reveal">Das kostenfreie Erstgespräch ist bei jedem Paket inklusive.</p>
+        <h2 class="js-reveal">Finde deinen <em>Einstieg</em></h2>
+        <p class="js-reveal">Vom ersten Schritt bis zur vollständigen Planung — du wählst, was jetzt passt.</p>
         <div class="urgency-bar js-reveal" aria-live="polite">
           <span class="urgency-dot"></span>
-          Nur noch <strong>3 Beratungsplätze</strong> im Juli verfügbar — jetzt sichern!
+          Nur noch <strong>3 Beratungsplätze</strong> im Oktober verfügbar — jetzt sichern!
         </div>
       </div>
 
       <div class="pricing-grid">
         <div class="p-card js-reveal">
-          <div class="p-tier">Einstieg</div>
-          <div class="p-name">Beratung &amp; Planung</div>
-          <div class="p-price">€&thinsp;299</div>
-          <div class="p-per">pro Raum</div>
+          <div class="p-tier">Digital</div>
+          <div class="p-name">Grundkurs Farbe – Basics</div>
+          <div class="p-price">€&thinsp;17</div>
+          <div class="p-per">Einmalzahlung · sofort verfügbar</div>
           <ul class="p-list">
-            <li>Kostenloses Erstgespräch</li>
-            <li>Individuelle Farbberatung</li>
-            <li>2D Grundrissplanung</li>
-            <li>Einkaufsliste &amp; Empfehlungen</li>
+            <li>Wie Farbe in Räumen wirklich wirkt</li>
+            <li>Licht, Kontrast, Kombination verstehen</li>
+            <li>10 sofort anwendbare Farbkombinationen</li>
+            <li>Digitaler Kurs, direkt nach Kauf</li>
           </ul>
-          <a href="mailto:info@voulafarinha.com" class="btn-outline magnetic"><span>Anfragen</span></a>
+          <a href="#contact" class="btn-outline magnetic"><span>Zum Kurs</span></a>
         </div>
 
         <div class="p-card p-featured js-reveal">
           <div class="p-badge">Empfohlen</div>
-          <div class="p-tier">Beliebt</div>
-          <div class="p-name">Look &amp; Feel Paket</div>
-          <div class="p-price">ab €&thinsp;699</div>
-          <div class="p-per">pro Raum</div>
+          <div class="p-tier">Online-Beratung</div>
+          <div class="p-name">Klartext-Gespräch</div>
+          <div class="p-price">€&thinsp;179</div>
+          <div class="p-per">90 Min · komplett online</div>
           <ul class="p-list">
-            <li>Kostenloses Erstgespräch</li>
-            <li>2D/3D Grundrissplanung</li>
-            <li>Kreatives Farb- &amp; Raumkonzept</li>
-            <li>Budget-Tracker</li>
-            <li>Finale Präsentation mit Walkthrough</li>
+            <li>Persönliche 1:1 Online-Beratung</li>
+            <li>Konkrete Empfehlungen für deinen Raum</li>
+            <li>Klare Antworten ohne Umwege</li>
+            <li>Umsetzbarer Aktionsplan danach</li>
+            <li>Aufzeichnung auf Wunsch</li>
           </ul>
-          <a href="mailto:info@voulafarinha.com" class="btn-primary magnetic"><span>Jetzt buchen</span></a>
+          <a href="#contact" class="btn-primary magnetic"><span>Termin anfragen</span></a>
         </div>
 
         <div class="p-card js-reveal">
-          <div class="p-tier">Premium</div>
-          <div class="p-name">Individuelles 3D Konzept</div>
+          <div class="p-tier">Vollplanung</div>
+          <div class="p-name">Individuelle Raumplanung</div>
           <div class="p-price">ab €&thinsp;1.600</div>
-          <div class="p-per">pro Projekt</div>
+          <div class="p-per">pro Projekt · Anfrage erforderlich</div>
           <ul class="p-list">
-            <li>Kostenloses Erstgespräch</li>
-            <li>Vollständiges 3D Raumkonzept</li>
-            <li>Material- &amp; Möbelauswahl</li>
-            <li>Persönliche Begleitung</li>
-            <li>Privat- &amp; Gewerbeprojekte</li>
+            <li>Grundriss &amp; Möbelstellung</li>
+            <li>Farb- und Materialkonzept</li>
+            <li>2D/3D Visualisierung</li>
+            <li>Umsetzungshilfen &amp; Einkaufsliste</li>
+            <li>Auch für Gewerbe &amp; Hamburg vor Ort</li>
           </ul>
-          <a href="mailto:info@voulafarinha.com" class="btn-outline magnetic"><span>Anfragen</span></a>
+          <a href="#contact" class="btn-outline magnetic"><span>Projekt anfragen</span></a>
         </div>
       </div>
     </div>
